@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Portal</title>
+    <link rel="icon" href="/hr portal/OIP .ico">
+    <style>
+        body{
+            margin: 0px;padding: 0px;
+            font-family: Arial,sans-serif;
+            background-color: rgb(244, 165, 68);
+        }
+        header{
+            background-color: rgb(114, 5, 216);
+            color: aliceblue;
+            text-align: center;
+            padding: 2px;
+        }
+        .navitem{
+            display: inline;
+            text-align: center;
+            padding: 20px;
+        }
+        .navitem a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+        .registration{
+            width: max-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .empolyeetable{
+            text-align: center;
+        }
+        table{
+            margin-left: auto;
+            margin-right: auto;
+            width:100%;
+            border-collapse:collapse;
+        }
+        th,td{
+            border: 2px solid rgb(232, 25, 3);
+            padding: 10px;
+        }
+        .contactus{
+            text-align: center;
+        }
+        footer{
+            text-align: center;
+            width: 100%;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome To Company Empolyee Portal</h1>
+        <nav>
+        <ul>
+            <li class="navitem"><a href="#empolyee-registration">Empolyee Regsitration</a></li>
+            <li class="navitem"><a href="#directory">Directory</a></li>
+            <li class="navitem"><a href="#contact-us">Contact us</a></li>
+        </ul>
+    </nav>
+    </header>
+    <img src="/hr portal/OIP.jpg" style="width: 100%;height:300px;" alt="not found">
+    <section id="empolyee-registration" class="registration">
+        <h2>Empolyee Registration</h2>
+        <p>Fill this below form to register as <em>Empolyee</em>.</p>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" placeholder="Enter your name" required><br><br>
+            <label for="email">Email-id</label>
+            <input type="email" placeholder="Enter your email" required><br><br>
+            <label for="password">Password</label>
+            <input type="password" placeholder="Enter your password" required><br><br>
+            <label for="age">Age</label>
+            <input type="number" placeholder="Enter your age" required><br><br>
+            <label for="role">Roles</label>
+            <select id="role">
+                <option>choose one of the roles</option>
+                <option>system analyst</option>
+                <option>Product Manager</option>
+                <option>Graphic Designer</option>
+                <option>Data analyst</option>
+            </select><br><br>
+            <label for="joining date">Select Your Joining Date</label>
+            <input type="date" id="joining date"><br><br>
+            <input type="checkbox" id="terms" value="agree">
+            <label for="terms">I AGREE ON THE TERMS AND CONDITION.</label><br><br>
+            <input type="submit">
+            <input type="reset">
+        </form>
+    </section>
+    <section id="directory" class="empolyeetable">
+        <h2>Empolyee Directory</h2>
+        <p>List of all register empolyees.</p>
+        <table>
+            <tr>
+                <th>EMPOLYEE-ID</th>
+                <th>EMPOLYEE-NAME</th>
+                <th>EMPOLYEE-ROLE</th>
+            </tr>
+            <tr>
+                <td>935</td>
+                <td>Abhi</td>
+                <td>system analyst</td>
+            </tr>
+            <tr>
+                <td>456</td>
+                <td>Abhinav</td>
+                <td>Graphic Designer</td>
+            </tr>
+            <tr>
+                <td>568</td>
+                <td>Siddhartha</td>
+                <td>data analyst</td>
+            </tr>
+        </table>
+    </section>
+    <section id="contact-us" class="contactus">
+        <h2>Contact-us</h2>
+        <p>You can contact-us at company@gmail.com or visit us between 9am -6pm.</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.4281971294286!2d85.12409127512768!3d25.623910314285613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed59fbdf57f9e1%3A0x97c49325f2721c19!2sTCS!5e0!3m2!1sen!2sin!4v1701280405022!5m2!1sen!2sin" width="450"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <footer>
+        <p>&copy; company Name</p>
+    </footer>
+</body>
+</html>
